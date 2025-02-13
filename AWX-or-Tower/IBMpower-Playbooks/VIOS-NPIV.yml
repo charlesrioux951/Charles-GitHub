@@ -1,0 +1,15 @@
+---
+- name: List NPIV information on IBM VIOS
+    hosts: vios
+    gather_facts: no
+    tasks:
+        - name: Run lsmap command to list NPIV information
+            shell: |
+                for vhost in $(lsdev -type adapter -virtual | grep vhost | awk '{print $1}'); do
+                    lsmap -vadapter $vhost -npiv
+                done
+            register: npiv_info
+
+        - name: Display NPIV information
+            debug:
+                var: npiv_info.stdout_lines
