@@ -6,7 +6,7 @@ This repository contains Ansible playbooks designed for managing and automating 
 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
-- [Usage](#usage)
+- [Usage][def]
 - [Playbooks](#playbooks)
 - [License](#license)
 
@@ -42,3 +42,5 @@ These playbooks are tailored for Ubuntu environments, providing a streamlined wa
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+[def]: #usage
