@@ -2,5 +2,8 @@
     "ansibleServer.trace.server": "verbose",
     "ansible.lightspeed.enabled": false,
     "ansible.lightspeed.suggestions.enabled": false,
-    "ansible.executionEnvironment.containerEngine": "docker"
+    "ansible.executionEnvironment.containerEngine": "docker",
+    "editor.defaultFormatter": "redhat.ansible",
+    "notebook.defaultFormatter": "vscode.json-language-features",
+    "ansible.ansible.useFullyQualifiedCollectionNames": false
 }
